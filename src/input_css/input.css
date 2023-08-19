@@ -1,4 +1,11 @@
+/* Body */
+@import url('https://fonts.googleapis.com/css2?family=Amiko&display=swap');
+/* Headers */
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+/* Logo */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Metamorphous&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+

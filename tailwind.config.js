@@ -4,8 +4,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'primary': ['Great Vibes']
-      }
+        'primary': ['Great Vibes'],
+        'header': ['Marcellus'],
+        'body': ['Amiko']
+      },
+      backgroundImage: {
+        'hero-pattern': "url('../src/images/svg/nnneon.svg')"
+      },
     },
   },
   plugins: [],

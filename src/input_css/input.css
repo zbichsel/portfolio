@@ -8,3 +8,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+nav, .texty {
+    font-family: 'Amika', sans-serif;
+}
+
+section, h4 {
+    font-family: 'Marcellus', sans-serif;
+}
+
+#geist {
+    font-family: 'Great Vibes', cursive;
+}
+/* delete these three changes when figure out how to use tailwind */

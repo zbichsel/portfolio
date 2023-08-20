@@ -5,54 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../dist/output.css">
-    <title>Portfolio</title>
+    <!-- <link rel="stylesheet" href="../../playground.css"> -->
+    <title>TUTORIAL</title>
 </head>
 
-<body class="dark:bg-gray-50">
-    <nav class="bg-white border-gray-200 dark:bg-zinc-600">
+<body class="w-screen">
+    <nav class="border-gray-200 bg-zinc-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center">
-                <img src="../images/svg/nnneon.svg" class="h-8 mr-3" alt="Upside-Down Triangle" />
+                <img src="../images/svg/nnneon.svg" class="h-8 mr-3 animate-pulse" alt="Upside-Down Triangle" />
                 <span
-                    class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white font-primary">Geist</span>
+                    class="self-center text-3xl font-semibold whitespace-nowrap text-zinc-50 font-primary">Geist</span>
             </a>
             <div class="flex items-center md:order-2">
                 <button type="button"
-                    class="flex mr-3 text-sm bg-zinc-600 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                    class="flex mr-3 text-sm bg-zinc-600 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-600"
                     id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
                     data-dropdown-placement="bottom">
                     <span class="sr-only">Open user menu</span>
                     <img class="w-8 h-8 rounded-full" src="../images/svg/nnneon.svg" alt="">
                 </button>
                 <!-- Dropdown menu -->
-                <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-300 rounded-md shadow-xl dark:bg-zinc-600 dark:divide-zinc-400 font-header"
+                <div class="z-50 hidden my-4 text-base list-none divide-y rounded-md shadow-xl bg-zinc-600 divide-zinc-400 font-header"
                     id="user-dropdown">
                     <div class="px-4 py-3">
-                        <span class="block text-sm text-gray-900 dark:text-zinc-200">Zackrey Bichsel</span>
-                        <span class="block text-sm  text-zinc-300 truncate dark:text-zinc-300">biksel09@gmail.com</span>
+                        <span class="block text-sm text-zinc-200">Zackrey Bichsel</span>
+                        <span class="block text-sm truncate text-zinc-300">biksel09@gmail.com</span>
                     </div>
                     <ul class="py-2" aria-labelledby="user-menu-button">
                         <li>
                             <a href="#"
-                                class="block px-4 py-2 font-header text-sm text-gray-700 hover:bg-zinc-500 dark:hover:bg-zinc-500 dark:text-zinc-300 dark:hover:text-zinc-200">Dashboard</a>
+                                class="block px-4 py-2 font-header text-sm hover:bg-zinc-500 text-zinc-300 hover:text-zinc-200">Dashboard</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block px-4 py-2 font-header text-sm text-gray-700 hover:bg-zinc-500 dark:hover:bg-zinc-500 dark:text-gray-200 dark:hover:text-zinc-200">Settings</a>
+                                class="block px-4 py-2 font-header text-sm hover:bg-zinc-500 text-zinc-300 hover:text-zinc-200">Settings</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block px-4 py-2 font-header text-sm text-gray-700 hover:bg-zinc-500 dark:hover:bg-zinc-500 dark:text-gray-200 dark:hover:text-zinc-200">Earnings</a>
+                                class="block px-4 py-2 font-header text-sm hover:bg-zinc-500 text-zinc-300 hover:text-zinc-200">Earnings</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block px-4 py-2 font-header text-sm text-gray-700 hover:bg-zinc-500 dark:hover:bg-zinc-500 dark:text-gray-200 dark:hover:text-zinc-200">Sign
+                                class="block px-4 py-2 font-header text-sm hover:bg-zinc-500 text-zinc-300 hover:text-zinc-200">Sign
                                 out</a>
                         </li>
                     </ul>
                 </div>
                 <button data-collapse-toggle="navbar-user" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-zinc-300 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-zinc-300 dark:hover:bg-zinc-500 dark:focus:ring-gray-600"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-zinc-300 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-zinc-100 hover:bg-zinc-500"
                     aria-controls="navbar-user" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -62,40 +63,105 @@
                     </svg>
                 </button>
             </div>
-            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
+            <div class="items-center justify-between visible w-full md:flex md:w-auto md:order-1" id="navbar-user">
                 <ul
-                    class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-zinc-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-zinc-600 md:dark:bg-zinc-600 dark:border-zinc-400">
+                    class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-zinc-600 md:bg-zinc-600 border-zinc-400">
                     <li>
                         <a href="#"
-                            class="block py-2 pl-3 pr-4 font-header text-xl text-white dark:hover:bg-zinc-500 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-pink-300"
+                            class="block py-2 pl-3 pr-4 font-header text-xl text-zinc-300 hover:bg-zinc-500 rounded md:bg-transparent md:p-0 md:hover:text-pink-300"
                             aria-current="page">Home</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 pl-3 pr-4 font-header text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-zinc-300 dark:hover:bg-zinc-500 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                            class="block py-2 pl-3 pr-4 font-header text-xl text-zinc-300 hover:bg-zinc-500 rounded md:bg-transparent md:p-0 md:hover:text-pink-300">About</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 pl-3 pr-4 font-header text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-zinc-300 dark:hover:bg-zinc-500 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Portfolio</a>
+                            class="block py-2 pl-3 pr-4 font-header text-xl text-zinc-300 hover:bg-zinc-500 rounded md:bg-transparent md:p-0 md:hover:text-pink-300">Portfolio</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 pl-3 pr-4 font-header text-xl  text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-zinc-300 dark:hover:bg-zinc-500 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                            class="block py-2 pl-3 pr-4 font-header text-xl text-zinc-300 hover:bg-zinc-500 rounded md:bg-transparent md:p-0 md:hover:text-pink-300">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- jumbotron  -->
-    <section
-        class="bg-cover bg-center sm:bg-zinc-400 bg-no-repeat bg-hero-pattern bg-zinc-400 bg-blend-soft-light font-body">
-        <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-zinc-100 md:text-5xl lg:text-6xl">
+    <section class="bg-cover bg-center bg-no-repeat bg-hero-pattern font-body bg-zinc-50">
+        <div class="px-4 mx-auto max-w-screen-xl text-center py-24 md:py-48 lg:py-56 xl:py-64">
+            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-zinc-900 md:text-5xl lg:text-6xl">
                 Creating dreams.</h1>
-            <p class="mb-8 text-lg font-normal text-zinc-300 lg:text-xl sm:px-16 lg:px-48">From imagination to
+            <p class="mb-8 text-lg font-normal text-zinc-900 lg:text-xl sm:px-16 lg:px-48">From imagination to
                 manifestation.
             </p>
         </div>
+        <div class="p-2 rounded-sm md:col-span-4">
+            <hr
+                class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
+        </div>
     </section>
+    <!-- playing around -->
+    <div class="bg-zinc-50">
+        <div class="min-h-screen flex items-center justify-center">
+            <div
+                class="grid grid-rows-9 md:grid-cols-4 gap-4 p-5 row-start-1 md:col-span-1 md:row-start-1 md:col-start-1">
+                <div class="p-3 rounded-sm">
+                    <img class="rounded-sm" src="../images/zackb.jpeg" alt="">
+                </div>
+                <div
+                    class="bg-gradient-to-l from-pink-100 via-zinc-50 to-zinc-50 bg-opacity-50 text-opacity-100 text-zinc-500 text-md text-bold font-body text-justify tracking-tight indent-8 p-10 rounded-sm flex items-center justify-center row-start-2 md:col-span-3 md:row-start-1 md:col-start-2">
+                    In today's dynamic digital landscape, a robust and versatile skill set is paramount for creating
+                    engaging and interactive web experiences. My expertise encompasses a comprehensive array of
+                    technologies, enabling me to craft seamless and captivating web applications. With proficiency in
+                    HTML, CSS, and JavaScript, I can construct the foundational elements of web pages, ensuring
+                    aesthetic appeal and optimal user experience.</div>
+                <div class="text-zinc-500 p-10 rounded-sm row-start-7 md:row-start-2 md:col-span-1">
+                    <img src="../images/horiseon-refactor.png" class="h-auto w-auto" alt="">
+                    <div class="font-header mt-4 text-center">
+                        <h4 class="text-2xl">Horiseon Refactor</h4>
+                    </div>
+                </div>
+                <div
+                    class="bg-gradient-to-r from-pink-100 via-zinc-50 to-zinc-50 bg-opacity-50 text-opacity-100 text-zinc-500 text-md text-bold font-body text-justify tracking-tight indent-8 p-10 rounded-sm flex items-center justify-center row-start-3 md:row-start-2 md:col-span-3 md:col-start-1">
+                    Moreover, my adeptness extends to the backend realm, where I am well-versed in utilizing Node.js and
+                    Express to architect and develop server-side functionalities. This proficiency empowers me to create
+                    efficient and scalable web applications that seamlessly handle user requests and data interactions.
+                    My expertise in MySQL further enhances my capability to design and manage databases, ensuring the
+                    seamless storage and retrieval of critical information.</div>
+                <div class="p-2 rounded-sm md:col-span-4">
+                    <hr
+                        class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
+                </div>
+                <div class="p-10 rounded-sm md:col-span-2 md:col-start-3 md:row-start-4">
+                    <img src="../images/bookify.png" alt="">
+                    <div class="font-header mt-4 text-center">
+                        <h4 class="text-2xl text-zinc-500">Bookify</h4>
+                    </div>
+                </div>
+                <div class="p-10 rounded-sm w-auto md:col-start-1 md:col-span-1 md:row-span-1"><img
+                        src="../images/is-my-park-safe-01.png" class="mb-2" alt="">
+                    <div class="font-header mt-4 text-center">
+                        <h4 class="text-2xl text-zinc-500">Is My Park Safe?</h4>
+                    </div>
+                </div>
+                <div
+                    class="bg-gradient-to-r from-pink-100 via-zinc-50 to-zinc-50 bg-opacity-50 text-opacity-100 text-zinc-500 text-md text-bold font-body text-justify tracking-tight indent-8 flex items-center justify-center p-10 rounded-sm row-start-4 md:row-start-4 md:col-span-2 md:col-start-1">
+                    To enhance user
+                    interface and overall design, I am adept in utilizing the Handlebars templating engine. This allows
+                    me to efficiently integrate dynamic content and streamline the presentation of data, contributing to
+                    a polished and responsive user experience.</div>
+                <div
+                    class="bg-gradient-to-l from-pink-100 via-zinc-50 to-zinc-50 bg-opacity-50 text-opacity-100 text-zinc-500 text-md text-bold font-body text-justify tracking-tight indent-8 flex items-center justify-center p-10 rounded-sm row-start-5 md:col-start-2 md:col-span-3">
+                    In a nutshell, my skill set represents a holistic approach to web development, spanning from the
+                    frontend design with HTML, CSS, and JavaScript, to the backend implementation with Node.js, Express,
+                    and MySQL. Combined with my proficiency in utilizing the Handlebars templating engine, I am equipped
+                    to conceptualize, create, and deploy robust web applications that seamlessly merge form and
+                    function.</div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script> -->
 </body>
+
 </html>

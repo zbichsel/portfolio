@@ -12,8 +12,5 @@
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.3.3"
-  },
-  "dependencies": {
-    "gsap": "^3.12.2"
   }
 }
